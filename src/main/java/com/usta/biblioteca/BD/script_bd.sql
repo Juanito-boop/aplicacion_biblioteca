@@ -124,5 +124,5 @@ SELECT
 		JOIN usuarios ON prestamos.usuarios_id_usuario = usuarios.id_usuario
 		JOIN libros ON prestamos.libros_id_libro = libros.id_libro
 	WHERE
-		prestamos.fecha_devolucion IS NOT NULL
-	LIMIT 5;
+		prestamos.fecha_devolucion IS NOT NULL;
+	-- LIMIT 5;
